@@ -1,0 +1,33 @@
+package com.example.hitungzakat;
+
+import com.example.aritmatika.R;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivityZakat extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_activity_zakat);
+        final EditText panjang = (EditText) findViewById(R.id.edtHarta);
+        final EditText lebar = (EditText) findViewById(R.id.edtEmas);
+        final TextView txtHasil =(TextView) findViewById(R.id.txtHasil);
+        final Button btnHitung = (Button) findViewById(R.id.brnHitung);
+        
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_activity_zakat, menu);
+        return true;
+    }
+    
+}
