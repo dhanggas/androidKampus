@@ -1,0 +1,31 @@
+package com.example.radiobutton;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.RadioButton;
+
+public class MainActivityRadio extends Activity {
+	RadioButton pil1;
+	RadioButton pil2;
+	RadioButton pil3;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_activity_radio);
+        pil1= (RadioButton)findViewById(R.id.radio0);
+        pil2= (RadioButton)findViewById(R.id.radio1);
+        pil3= (RadioButton)findViewById(R.id.radio2);
+        
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_activity_radio, menu);
+        return true;
+    }
+    
+}
