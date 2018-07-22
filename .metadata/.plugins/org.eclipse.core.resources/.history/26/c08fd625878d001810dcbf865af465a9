@@ -1,0 +1,47 @@
+package com.example.uasradioradio;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.RadioGroup.OnCheckedChangeListener;
+
+public class MainActivityRadioRadio extends Activity {
+	int valTujuan, valJumlah;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_activity_radio_radio);
+        RadioGroup rdoGroup1 = (RadioGroup)findViewById(R.id.radioGroup1);
+        RadioButton rdoTujuanA = (RadioButton)findViewById(R.id.radioJumlah1);
+        RadioButton rdoTujuanB = (RadioButton)findViewById(R.id.rdoJumlah2);
+        RadioGroup rdoGroup2 = (RadioGroup)findViewById(R.id.radioGroup2);
+        Button btnHitung = (Button)findViewById(R.id.btnHiutung);
+        
+//        rdoGroup1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+//			
+//			@Override
+//			public void onCheckedChanged(RadioGroup arg0, int arg1) {
+//				// TODO Auto-generated method stub
+//				if (rdo1.is) {
+//					
+//				} else {
+//
+//				}
+//				
+//			}
+//		});
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_activity_radio_radio, menu);
+        return true;
+    }
+    
+}
